@@ -22,7 +22,7 @@ veracode_static_scan:
   # As an App Profile - given the current name of your scanned repo
   # Use 'none' if you would not like any scans saved to the platform
   # analysis_branch: test2
-  analysis_on_platform: false
+  analysis_on_platform: true
   break_build_policy_findings: true
   # filter_mitigated_flaws: true
   #If break_build_invalid_policy is set to true, the build will break when the policy name is invalid.
@@ -43,7 +43,7 @@ veracode_static_scan:
   create_issue: true
   #If the trigger is set to true, the scan will be triggered when a command matches by either creating an issue or adding a comment to an issue.
   issues:
-    trigger: false
+    trigger: true
     commands:
       - "Veracode Static Scan"
 
