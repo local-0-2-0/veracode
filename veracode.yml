@@ -3,7 +3,7 @@ veracode_static_scan:
   # pull request event. Specifying both will only execute push event.
   # Leaving them both false means this will never run
   push:
-    trigger: true
+    trigger: false
     # Please only specify either branches_to_run or branches_to_exclude
     # Entering both will only execute branches_to_run
     # Leaving them both blank means this will never run
@@ -22,7 +22,7 @@ veracode_static_scan:
   # As an App Profile - given the current name of your scanned repo
   # Use 'none' if you would not like any scans saved to the platform
   # analysis_branch: test2
-  analysis_on_platform: false
+  analysis_on_platform: true
   break_build_policy_findings: true
   # filter_mitigated_flaws: true
   #If break_build_invalid_policy is set to true, the build will break when the policy name is invalid.
