@@ -99,7 +99,7 @@ jobs:
           deleteincompletescan: true
           workflowApp: true
           debug: ${{ inputs.debug }}
-          wait_for_scan_completion: false
+          waitForScanCompletion: false
 
       - name: Veracode Policy Results
         id: prepare-results
